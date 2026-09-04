@@ -1,23 +1,4 @@
-"""
-Production inference for the Adult Income (Census) classifier.
 
-Loads the single canonical artifact produced by Day 5, Task 1
-(model + calibration + tuned decision threshold, saved together so a
-caller can never accidentally apply the wrong threshold to the model).
-
-Usage
------
-    from inference import predict_income
-    import pandas as pd
-
-    new_rows = pd.read_csv("new_applicants.csv")   # same raw schema as training data
-    result = predict_income(new_rows)
-    print(result)
-
-Or from the command line:
-
-    python inference.py --input new_applicants.csv --output predictions.csv
-"""
 
 from __future__ import annotations
 
